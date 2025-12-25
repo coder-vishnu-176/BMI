@@ -8,7 +8,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #CCCCFF; 
+    background: linear-gradient(135deg, #43cea2, #185a9d); 
 }
 .outer-box{
     border:1px solid black ;
@@ -17,14 +17,16 @@ body{
     padding: 25px;
     text-align: center;
     height: fit-content;
-    background-color: rgba(245, 245, 245, 0.572);
+    background-color: #f9fafb;
     color: black;
-    border-color: black;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 h1{
+    color: #1f2933;
     margin-bottom: 38px;
 }
 p{
+    color: #4b5563;
     font-size: 20px;
     margin-bottom: 40px;
     font-weight: 500;
@@ -34,21 +36,25 @@ p{
     border-radius: 7px;
     padding: 10px;
     cursor: pointer;
-    background-color: rgb(163, 163, 247);
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
     color: white;
+    transition: all 0.3s ease;
 }
 .btn button:hover{
-    color: black;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 #result{
     padding: 18px;
     font-size: 20px;
     font-weight: 500;
+    color: #2563eb;
 }
 #status{
     padding: 5px;
     font-size: 18px;
     font-weight: 500;
+    color: #2563eb;
 }
 @media (min-width:0px) and (max-width:481px)
 {
