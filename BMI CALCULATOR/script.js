@@ -10,12 +10,15 @@ function call(){
         document.getElementById("status").innerText="Status: UnderWeight"
     }
     else if(parseFloat(bmi.toFixed(2))>18.5 && bmi.toFixed(2)<24.9 ){
-        document.getElementById("status").innerText="Status: Normal"
+        document.getElementById("status").innerText="Status: Normal ✅"
     }
     else if(parseFloat(bmi.toFixed(2))>25 && bmi.toFixed(2)<29.9 ){
-        document.getElementById("status").innerText="Status: OverWeight"
+        document.getElementById("status").innerText="Status: OverWeight ⚠️"
+    }
+    else if(parseFloat(bmi.toFixed(2))>25){
+        document.getElementById("status").innerText="Status: Obese ❌"
     }
     else{
-        document.getElementById("status").innerText="Status: Obese"
+         document.getElementById("status").innerText="Invalid Input"
     }
 }
